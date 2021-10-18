@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: '2.4'
+metadata:
+  name: 'demoproject'
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          url: http://172.16.40.54:8001
+          scp: true
+        app:
+          name: ZDEMOVSCODEAPP
+          description: Demo app deployment for Visual Studio Code
+          package: ZPACK_VSCODE
+          transport: S4AK900962
