@@ -10,7 +10,7 @@
 				<Page id="page" title="{i18n>title}">
 
 					<content>
-					<Text text="Hello ! Welcome to Visual Studio Code " class="sapUiLargeMarginBegin"/>
+					<Text text="Hello ! Welcome to Visual StudioCode " class="sapUiLargeMarginBegin" />
 					</content>
 				</Page>
 			</pages>
