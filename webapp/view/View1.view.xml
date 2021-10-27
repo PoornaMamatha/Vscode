@@ -2,7 +2,7 @@
     controllerName="com.vs.app.demoproject.controller.View1"
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
-    xmlns="sap.m"
+    xmlns="sap.m" xmlns:l="sap.ui.layout"  xmlns:html="http://www.w3.org/1999/xhtml"
 >
 	<Shell id="shell">
 		<App id="app">
@@ -10,7 +10,15 @@
 				<Page id="page" title="{i18n>title}">
 
 					<content>
-					<Text text="Hello ! Welcome to Visual StudioCode " class="sapUiLargeMarginBegin" />
+					<Toolbar>
+				<ToolbarSpacer/>
+					<Label design="Bold" text="Hello ! Welcome to Visual StudioCode " class="sapUiLargeMarginBegin" />
+					<ToolbarSpacer/>
+						</Toolbar>
+				<html:div id="id_Gauge1" ></html:div>
+				<FlexBox id="id_Gauge2" class="gauage" />
+				<!--<Grid id="id_Gauge3" class="" visible="false"/>-->
+				<l:Grid id="id_Gauge3" class=""/>
 					</content>
 				</Page>
 			</pages>
